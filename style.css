@@ -244,31 +244,47 @@ footer {
     transform: translateY(0);
 }
 
-/* Modal Styling */
+/* --- MODIFIED MODAL STYLING --- */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 2000; /* Sit on top */
+    position: fixed;
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.85); /* Darker overlay */
+    background-color: rgba(0,0,0,0.85);
     backdrop-filter: blur(5px);
+    /* --- Hide modal by default --- */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+/* --- Active state for the modal --- */
+.modal.modal-active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
 }
 
 .modal-content {
     background-color: var(--primary-color);
     margin: 5% auto;
     padding: 20px;
-    padding-top: 70px; /* Increased padding to make space for buttons */
+    padding-top: 70px;
     width: 90%;
     max-width: 900px;
     height: 85%;
     position: relative;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    /* --- Add transition for smooth appearance --- */
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal.modal-active .modal-content {
+    transform: scale(1);
 }
 
 .modal-content embed {
@@ -292,12 +308,11 @@ footer {
     cursor: pointer;
 }
 
-/* New Download Button Style */
 .download-btn {
     position: absolute;
     top: 20px;
-    right: 75px; /* Position it to the left of the close button */
-    padding: 0.5rem 1.5rem; /* Make it a bit smaller than the main button */
+    right: 75px;
+    padding: 0.5rem 1.5rem;
 }
 
 
@@ -310,7 +325,7 @@ footer {
         font-size: 2rem;
     }
     .nav-links {
-        display: none; /* Simple hiding for now, can be replaced with a burger menu */
+        display: none;
     }
     .about-content {
         flex-direction: column;
