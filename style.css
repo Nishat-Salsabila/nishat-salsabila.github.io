@@ -103,27 +103,6 @@ nav {
     color: var(--accent-color);
 }
 
-/* Hero Section */
-#hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--bg-color);
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-}
-
 /* Buttons */
 .btn {
     display: inline-block;
@@ -156,6 +135,7 @@ nav {
 /* About Section */
 #about {
     background-color: var(--primary-color);
+    padding-top: 120px; /* Add padding to push content down from fixed header */
 }
 
 .about-content {
@@ -264,6 +244,63 @@ footer {
     transform: translateY(0);
 }
 
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.85); /* Darker overlay */
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--primary-color);
+    margin: 5% auto;
+    padding: 20px;
+    padding-top: 70px; /* Increased padding to make space for buttons */
+    width: 90%;
+    max-width: 900px;
+    height: 85%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+}
+
+.modal-content embed {
+    border-radius: 5px;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--accent-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* New Download Button Style */
+.download-btn {
+    position: absolute;
+    top: 20px;
+    right: 75px; /* Position it to the left of the close button */
+    padding: 0.5rem 1.5rem; /* Make it a bit smaller than the main button */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
@@ -284,4 +321,3 @@ footer {
         max-width: 250px;
     }
 }
-

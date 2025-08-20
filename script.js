@@ -11,17 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Smooth Scrolling for Navigation Links ---
-    const navLinks = document.querySelectorAll('.nav-links a, .hero-content a');
+    const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            const href = this.getAttribute('href');
+            // Only apply smooth scroll to internal anchor links
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
         });
     });
@@ -48,5 +51,39 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 
-});
+    // --- CV Modal Logic ---
+    const cvModal = document.getElementById('cv-modal');
+    const cvLink = document.getElementById('cv-link');
+    const closeButton = document.querySelector('.close-button');
 
+    // Open the modal
+    if (cvLink) {
+        cvLink.addEventListener('click', (e) => {
+            // This prevents the link from opening the PDF directly
+            e.preventDefault(); 
+            cvModal.style.display = 'block';
+        });
+    }
+
+    // Close the modal with the close button
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            cvModal.style.display = 'none';
+        });
+    }
+
+    // Close the modal if the user clicks outside of the modal content
+    window.addEventListener('click', (e) => {
+        if (e.target == cvModal) {
+            cvModal.style.display = 'none';
+        }
+    });
+
+    // Close the modal with the Escape key
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && cvModal.style.display === 'block') {
+            cvModal.style.display = 'none';
+        }
+    });
+
+});
