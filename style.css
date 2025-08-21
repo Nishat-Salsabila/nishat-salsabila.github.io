@@ -140,7 +140,7 @@ nav {
 
 .about-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
 }
 
@@ -233,6 +233,117 @@ nav {
 .university {
   font-weight: normal; /* Normal font weight for the university name */
   color: #a0a0a0; /* A slightly darker gray color */
+}
+
+/* Experience Section */
+/* Container for the entire experience section */
+#research-experience {
+    padding: 2rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+#research-experience h2 {
+    color: #c4f941;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-bottom: 3rem;
+    color: #a0a0a0;
+}
+
+.subtitle a {
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+/* Timeline layout */
+.timeline {
+    position: relative;
+    padding-left: 50px; /* Space for the vertical line */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px; /* Position of the vertical line */
+    width: 2px;
+    height: 100%;
+    background-color: #555;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+/* The small dots on the timeline */
+.timeline-dot {
+    position: absolute;
+    top: 5px;
+    left: 20px; /* Position to align with the vertical line */
+    width: 14px;
+    height: 14px;
+    background-color: #56b09b;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* The content card */
+.timeline-content {
+    background-color: #2c2c36;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Styling for the logo */
+.logo-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text details styling */
+.details {
+    text-align: left;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.institution, .duration, .location {
+    color: #a0a0a0;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.bold {
+    font-weight: bold;
+    color: #f0f0f0;
 }
 
 /* Projects Section */
