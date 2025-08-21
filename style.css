@@ -346,6 +346,95 @@ nav {
     color: #f0f0f0;
 }
 
+/* Publications Section */
+#publications {
+    padding: 3rem;
+    color: #f0f0f0;
+}
+
+.publications-header {
+    margin-bottom: 2rem;
+}
+
+.publications-header h2 {
+    color: #c4f941;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.publications-header p {
+    color: #a0a0a0;
+    margin-top: 5px;
+}
+
+.publications-header a {
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+/* List of Publications */
+.publication-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.publication-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background-color: #2c2c36;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Icon style */
+.publication-item .fas {
+    font-size: 1.5em;
+    color: #f0f0f0;
+    flex-shrink: 0;
+}
+
+/* Publication Text Details */
+.publication-details {
+    flex: 1;
+}
+
+.publication-details .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.publication-details .authors {
+    color: #a0a0a0;
+    font-size: 0.9em;
+    margin: 5px 0 0;
+}
+
+/* Links (buttons) */
+.publication-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pub-link {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+    background-color: #555;
+    border-color: #777;
+}
+
 /* Projects Section */
 .project-grid {
     display: grid;
