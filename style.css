@@ -235,6 +235,69 @@ nav {
   color: #a0a0a0; /* A slightly darker gray color */
 }
 
+/* Skills Section */
+/* Skills Section */
+#skills {
+    padding: 3rem 2rem;
+    color: #f0f0f0;
+}
+
+#skills h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex; /* This is the key change for side-by-side layout */
+    justify-content: space-between; /* Spreads the columns out */
+    gap: 4rem; /* Adds space between the columns */
+}
+
+.skill-category {
+    flex: 1; /* Allows both columns to take up equal space */
+}
+
+.category-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    margin-bottom: 0.5rem;
+    color: #a0a0a0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skill-list li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #c4f941;
+    font-size: 1em;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
 /* Experience Section */
 /* Container for the entire experience section */
 #research-experience {
