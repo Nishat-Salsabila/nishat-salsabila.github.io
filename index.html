@@ -32,7 +32,7 @@ size_<!DOCTYPE html>
                 <li><a href="#experience">Certifications</a></li>
                 <li><a href="#achievement">Achievement</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+                <!--<li><a href="#contact">Contact</a></li>-->
                 <!-- Updated CV Link to trigger modal -->
                 <li><a href="document/cv.pdf" id="cv-link">CV</a></li>
             </ul>
@@ -42,70 +42,122 @@ size_<!DOCTYPE html>
     <main>
         <!-- About Section -->
         <section id="about" class="fade-in">
-            <div class="container" class="two-column-layout">
-                <div class="column"></div>
+            <div class="container">
                 <div class="about-content">
-                    <img src="images/Crop_nishat.jpg" alt="A professional headshot of Nishat Anjumane Salsabila" class="about-image">
-                    <div class="about-text" class="column">
+                    <div class="about-image-container">
+                        <img src="images/Crop_nishat.jpg" alt="A professional headshot of Nishat Anjumane Salsabila" class="about-image">
+                        <div class="image-caption">
+                            <h3>Nishat Anjumane Salsabila</h3>
+                            <p>B.Sc in EEE, CUET</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://nishat-salsabila.github.io/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nishat-anjumane-salsabila-095170348?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/AnjumaneNi1659?t=yjk-cp23PEdnW-gBIoe5tQ&amp;s=08" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-text">
                         <h2 class="about-me">About Me</h2>
                         <p>Hello! I'm Nishat Anjumane Salsabila, a recent Electrical and Electronic Engineering (EEE) graduate with a strong enthusiasm for research and learning new things. My academic background has provided me with a solid foundation in VLSI circuit design, RF/microwave systems, and analog integrated circuits. I have particularly enjoyed exploring low-noise amplifiers (LNAs), LNA design with attenuator, Power Amplifier(PA), and multi-stage amplifier designs using simulation tools such as Cadence Virtuoso.</p>
                         <p>With an eye toward advanced studies, I am eager to pursue a Master’s and Ph.D., where I can dive deeper into analog/RF IC design, low-power architectures, and emerging semiconductor technologies. While my primary interests lie in these areas, I am also open to conducting research in other relevant sectors. My long-term goal is to grow as a researcher and educator, contributing to innovative circuit design while also inspiring the next generation of engineers. I am now seeking opportunities where I can apply my engineering mindset.I also love sharing my insights on this website. [Check my recent posts for more!]. Feel free to reach out to me at nishatanjumane@gmail.com – I’d love to connect!</p>
                         <div class="download-link1">
-                            <a href="document/CV (updated).pdf"download>
-                                <i class="fas fa-download"></i>  Download my CV
+                            <a href="document/CV (updated).pdf" download="" class="btn-outline">
+                                <i class="fas fa-download"></i>  Curriculum Vitae
                             </a>
                         </div>
-                        <h2 class="about-me"> Interests & Education</h2>
-                        <div class="two-column-layout">
-                             <div class="column">
-                                 <h3 class="interests-heading">Interests</h3>
-                                 <ul>
-                                      <li>VLSI</li>
-                                      <li>Semiconductor</li>
-                                      <li>Communication</li>
-                                      <li>Biomedical Engineering</li>
-                                      <li>Machine Learning</li>
-                                 </ul>
-                             </div>
-                             <div class="column">
-                                 <h3 class="education-heading">Education</h3>
-                                 <ul>
-                                     <li>
-                                        <i class ="fas fa-graduation-cap"></i>
-                                        <span class="degree">B.Sc in Electrical and Electronic Engineering</span>
-                                        <span class="dates">2019-2025</span>
-                                        <br>
-                                        <span class="university">Chittagong University of Engineering and Technology, Bangladesh.</span>
-                                        <br>
-                                        <span class="grade">Grade: 3.72/4.00</span>
-                                        <br>
-                                        <span class="Position">Position: 15/180 </span>
-                                    </li>
-                                    <li>
-                                        <i class ="fas fa-graduation-cap"></i>
-                                        <span class="degree">HSC in Science</span>
-                                        <span class="dates">2017-2019</span>
-                                        <br>
-                                        <span class="university">Noakhali Govt. Collage</span>
-                                        <br>
-                                        <span class="grade">Grade: 5.00/5.00</span>
-                                    </li>
-                                                                        <li>
-                                        <i class ="fas fa-graduation-cap"></i>
-                                        <span class="degree">SSC in Science</span>
-                                        <span class="dates">2015-2017</span>
-                                        <br>
-                                        <span class="university">Noakhali Govt. Girls High School</span>
-                                        <br>
-                                        <span class="grade">Grade: 5.00/5.00</span>
-                                    </li>
-                                 </ul>
-                             </div>
+                    </div>
+                </div>
+        
+                <!-- New Flashcard Grid for Interests & Education -->
+                <h2 class="about-me" style="display: block; text-align: center; margin-top: 4rem;">Interests & Education</h2>
+                <div class="project-grid">
+  
+                    <!-- Education Card -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3 class="category-heading">Education</h3>
+                            <ul class="education-list">
+                                <li>
+                                   <i class="fas fa-graduation-cap"></i>
+                                   <div>
+                                       <span class="degree">B.Sc in Electrical and Electronic Engineering,</span>
+                                       <span class="dates">2019-2025</span>
+                                       <br>
+                                       <span class="university">Chittagong University of Engineering and Technology, Bangladesh.</span>
+                                       <br>
+                                       <span class="grade">Grade: 3.72/4.00</span><br>
+                                       <span class="Position">Position: 15/180 </span>
+                                   </div>
+                               </li>
+                               <br>
+                               <li>
+                                   <i class="fas fa-graduation-cap"></i>
+                                   <div>
+                                       <span class="degree">Higher Secondary Certificate (Science),</span>
+                                       <span class="dates">2017-2019</span>
+                                       <br>
+                                       <span class="university">Noakhali Govt. Collage</span>
+                                       <br>
+                                       <span class="grade">Grade: 5.00/5.00</span>
+                                   </div>
+                               </li>
+                               <br>
+                               <li>
+                                   <i class="fas fa-graduation-cap"></i>
+                                   <div>
+                                       <span class="degree">Secondary School Certificate (Science),</span>
+                                       <span class="dates">2017</span>
+                                       <br>
+                                       <span class="university">Noakhali Govt. Girls High School</span>
+                                       <br>
+                                       <span class="grade">Grade: 5.00/5.00</span>
+                                   </div>
+                               </li>
+                               <br>
+                               <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <span class="degree">Junior School Certificate,</span>
+                                    <span class="dates">2014</span>
+                                    <br>
+                                    <span class="university">Noakhali Govt. Girls High School</span>
+                                    <br>
+                                    <span class="grade">Grade: 5.00/5.00</span>
+                                </div>
+                            </li>
+                            <br>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <span class="degree">Primary School Certificate,</span>
+                                    <span class="dates">2010</span>
+                                    <br>
+                                    <span class="university">Noakhali Govt. Girls High School</span>
+                                    <br>
+                                    <span class="grade">Grade: 5.00/5.00</span>
+                                </div>
+                            </li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3 class="category-heading">Interests</h3>
+                            <ul class="skill-list">
+                                <li>VLSI</li>
+                                <li>Semiconductor</li>
+                                <li>Communication</li>
+                                <li>Biomedical Engineering</li>
+                                <li>Machine Learning</li>
+                            </ul>
+                        </div>
+                        <img src="images/research.jpg" alt="Artistic representation of research interests" class="card-footer-image">
                     </div>
                 </div>
             </div>
         </section>
+
+<!-- index.html -->
 
 <!--Skills Section-->
 <section id="skills" class="fade-in">
@@ -165,8 +217,6 @@ size_<!DOCTYPE html>
 </section>
 
 
-
-
         <!--Experience Section-->
 
 <section id="research">
@@ -195,15 +245,13 @@ Amplifier for Advanced Medical Imaging Systems</li>
                         <li><span class="bold">Advisor:</span> Assistant Prof Mohammad Mahmudul Hasan Tareq</li>
                         <li>The thesis presents a high-gain, wideband Low Noise Amplifier (LNA) designed for frequencies above 6 GHz using 90nm technology in Cadence Virtuoso. The LNA, which achieves a power gain of 29 dB across a 1.7 GHz bandwidth (6.6-8.3 GHz) with an average noise figure below 3 dB, is primarily intended for bio-medical applications where signal amplification is crucial. A key innovation of this work is the integration of a gain control mechanism using an input-side attenuator, which maintains the circuit's superior performance while allowing for adjustable gain. This research demonstrates a significant advancement in LNA design, offering a low-power solution with excellent impedance matching for use in both bio-medical and wideband communication systems..</li>
                     </ul>
-                    <div class="download-link">
-                            <a href="document/thesis_presentation_slide.pdf"download>
-                                <i class="fas fa-download"></i>  Thesis Presentation Slide
-                            </a>
-                    </div>
-                    <div class="download-link">
-                            <a href="document/Thesis_report1.pdf"download>
-                                <i class="fas fa-download"></i> Thesis Report
-                            </a>
+                    <div class="thesis-links">
+                        <a href="document/thesis_presentation_slide.pdf" download class="btn-outline">
+                            <i class="fas fa-download"></i> Thesis Slides
+                        </a>
+                        <a href="document/Thesis_report1.pdf" download class="btn-outline">
+                            <i class="fas fa-download"></i> Thesis Report
+                        </a>
                     </div>
                 </div>
             </div>
@@ -444,7 +492,7 @@ The system was developed and validated through a multi-stage process, including 
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section
         <section id="contact" class="fade-in">
             <div class="container">
                 <h2 class="con">Get In Touch</h2>
@@ -457,7 +505,7 @@ The system was developed and validated through a multi-stage process, including 
                 </div>
             </div>
         </section>
-    </main>
+    </main> -->
 
     <!-- CV Modal -->
     <div id="cv-modal" class="modal">

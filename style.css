@@ -181,10 +181,47 @@ nav {
 }
 
 .about-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+    border: 3px solid #555;
+}
+
+/* Styling for the image at the bottom of a card */
+.card-image {
+    width: 100%; /* Makes the image fill the card's width */
+    border-radius: 8px; /* Rounds the corners of the image */
+    margin-top: 1.5rem; /* Adds space between the list and the image */
+    display: block;
+}
+
+/* Add this new rule anywhere in the "About Section" part of your CSS */
+.about-image-container {
     flex: 1;
     max-width: 300px;
-    border-radius: 10px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the new caption under the profile image */
+.image-caption {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.image-caption h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+}
+
+.image-caption p {
+    font-size: 1rem;
+    color: #a0a0a0; /* A slightly dimmer text color */
+    margin: 0;
 }
 
 .download-link1 {
@@ -204,18 +241,29 @@ nav {
     font-size: 0.9rem;
 }
 
-/*interest and education column*/
-
-.two-column-layout {
-  display: flex;
-  justify-content: space-between; /* or use a gap property */
-  gap: 20px; /* Adjust the gap as needed */
+/* Styling for the Education list inside its new card */
+.education-list {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.column {
-  flex: 1; /* Makes each column take up an equal amount of space */
+.education-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
 }
 
+.education-list li:last-child {
+    margin-bottom: 0;
+}
+
+.education-list .fa-graduation-cap {
+    color: floralwhite;
+    font-size: 1.2em;
+    margin-right: 15px;
+    margin-top: 5px;
+}
 /* Optional styling for the headings and list items */
 .two-column-layout h3 {
   font-size: 1.5em;
@@ -911,4 +959,71 @@ footer {
         margin-top: 2rem;
         max-width: 250px;
     }
+}
+
+/* Style for the 'Download my CV' link */
+/* Reusable style for outline buttons */
+.btn-outline {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    color: var(--accent-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-color);
+    color: #121212;
+}
+
+/* Container for thesis download links */
+.thesis-links {
+    display: flex;
+    flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+    gap: 1rem; /* Adjusts space between buttons */
+    margin-top: 1.5rem; /* Adds space above the buttons */
+}
+
+
+/* style.css */
+
+.project-card {
+    background: var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* --- New Rules Below --- */
+    display: flex; /* Establishes a flex container */
+    flex-direction: column; /* Stacks child elements (image and info) vertically */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-info {
+    padding: 1.5rem;
+    /* --- New Rules Below --- */
+    flex: 1; /* Allows this div to grow and fill available vertical space */
+    display: flex; /* Makes this a flex container as well */
+    flex-direction: column; /* Stacks the text and the button link vertically */
+}
+
+.project-links {
+    /* --- Modified Rule --- */
+    margin-top: auto; /* This is the key change: pushes the button to the bottom */
+    /* --- New Rule --- */
+    justify-content: center; /* Centers the button horizontally */
+    /* --- Add padding to ensure space between text and button --- */
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
 }
