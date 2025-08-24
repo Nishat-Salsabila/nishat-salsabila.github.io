@@ -592,12 +592,17 @@ nav {
     text-align: center;
 }
 
+/* style.css */
+
 .project-card {
     background: var(--primary-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* --- New Rules Below --- */
+    display: flex; /* Establishes a flex container */
+    flex-direction: column; /* Stacks child elements (image and info) vertically */
 }
 
 .project-card:hover {
@@ -612,10 +617,19 @@ nav {
 
 .project-info {
     padding: 1.5rem;
+    /* --- New Rules Below --- */
+    flex: 1; /* Allows this div to grow and fill available vertical space */
+    display: flex; /* Makes this a flex container as well */
+    flex-direction: column; /* Stacks the text and the button link vertically */
 }
 
 .project-links {
-    margin-top: 1.5rem;
+    /* --- Modified Rule --- */
+    margin-top: auto; /* This is the key change: pushes the button to the bottom */
+    /* --- New Rule --- */
+    justify-content: center; /* Centers the button horizontally */
+    /* --- Add padding to ensure space between text and button --- */
+    padding-top: 1.5rem;
     display: flex;
     gap: 1rem;
 }
