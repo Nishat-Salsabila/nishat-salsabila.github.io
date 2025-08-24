@@ -12,20 +12,24 @@ size_<!DOCTYPE html>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Jura Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js"></script>
 
     <!-- Header Section -->
     <header id="header">
         <nav>
             <div class="logo">Nishat Anjumane Salsabila</div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skills</a></li>
+                <li><a href="#about" class="home-link">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience&certification">Experience & Certificate</a></li>
+                <li><a href="#experience">Certifications</a></li>
                 <li><a href="#achievement">Achievement</a></li>
 
                 <li><a href="#contact">Contact</a></li>
@@ -38,19 +42,20 @@ size_<!DOCTYPE html>
     <main>
         <!-- About Section -->
         <section id="about" class="fade-in">
-            <div class="container">
-                <h2>About Me</h2>
+            <div class="container" class="two-column-layout">
+                <div class="column"></div>
                 <div class="about-content">
                     <img src="images/Crop_nishat.jpg" alt="A professional headshot of Nishat Anjumane Salsabila" class="about-image">
-                    <div class="about-text">
-                        <p>Hello! I'm Nishat Anjumane Salsabila, a recent Electrical and Electronic Engineering (EEE) graduate with a strong enthusiasm for research and learning new things. My academic background has provided me with a solid foundation in VLSI circuit design, RF/microwave systems, and analog integrated circuits. I have particularly enjoyed exploring low-noise amplifiers (LNAs), Power Amplifier(PA), and multi-stage amplifier designs using simulation tools such as Cadence Virtuoso.</p>
-                        <p>With an eye toward advanced studies, I am eager to pursue a Master’s and Ph.D., where I can dive deeper into analog/RF IC design, low-power architectures, and emerging semiconductor technologies. My long-term goal is to grow as a researcher and educator, contributing to innovative circuit design while also inspiring the next generation of engineers. I am now seeking opportunities where I can apply my engineering mindset.I also love sharing my insights on this website. [Check my recent posts and mini-courses for more!]. Feel free to reach out to me at nishatanjumane@gmail.com – I’d love to connect!</p>
-                        <div class="download-link">
-                            <a href="document/cv.pdf"download>
-                                <i class="fas fa-download"></i>Download my CV
+                    <div class="about-text" class="column">
+                        <h2 class="about-me">About Me</h2>
+                        <p>Hello! I'm Nishat Anjumane Salsabila, a recent Electrical and Electronic Engineering (EEE) graduate with a strong enthusiasm for research and learning new things. My academic background has provided me with a solid foundation in VLSI circuit design, RF/microwave systems, and analog integrated circuits. I have particularly enjoyed exploring low-noise amplifiers (LNAs), LNA design with attenuator, Power Amplifier(PA), and multi-stage amplifier designs using simulation tools such as Cadence Virtuoso.</p>
+                        <p>With an eye toward advanced studies, I am eager to pursue a Master’s and Ph.D., where I can dive deeper into analog/RF IC design, low-power architectures, and emerging semiconductor technologies. While my primary interests lie in these areas, I am also open to conducting research in other relevant sectors. My long-term goal is to grow as a researcher and educator, contributing to innovative circuit design while also inspiring the next generation of engineers. I am now seeking opportunities where I can apply my engineering mindset.I also love sharing my insights on this website. [Check my recent posts for more!]. Feel free to reach out to me at nishatanjumane@gmail.com – I’d love to connect!</p>
+                        <div class="download-link1">
+                            <a href="document/CV (updated).pdf"download>
+                                <i class="fas fa-download"></i>  Download my CV
                             </a>
                         </div>
-                        <h2>My Interests & Education</h2>
+                        <h2 class="about-me"> Interests & Education</h2>
                         <div class="two-column-layout">
                              <div class="column">
                                  <h3 class="interests-heading">Interests</h3>
@@ -59,6 +64,7 @@ size_<!DOCTYPE html>
                                       <li>Semiconductor</li>
                                       <li>Communication</li>
                                       <li>Biomedical Engineering</li>
+                                      <li>Machine Learning</li>
                                  </ul>
                              </div>
                              <div class="column">
@@ -69,10 +75,11 @@ size_<!DOCTYPE html>
                                         <span class="degree">B.Sc in Electrical and Electronic Engineering</span>
                                         <span class="dates">2019-2025</span>
                                         <br>
-                                        <span class="university">Chittagong University of Engineering and Technology,Chittagong.</span>
+                                        <span class="university">Chittagong University of Engineering and Technology, Bangladesh.</span>
+                                        <br>
                                         <span class="grade">Grade: 3.72/4.00</span>
                                         <br>
-                                        <span class="Position">Position: 15th </span>
+                                        <span class="Position">Position: 15/180 </span>
                                     </li>
                                     <li>
                                         <i class ="fas fa-graduation-cap"></i>
@@ -100,12 +107,12 @@ size_<!DOCTYPE html>
             </div>
         </section>
 
-
+<!--Skills Section-->
 <section id="skills">
-    <h2>My Skills</h2>
+    <h2 class="my-skills">Skills</h2>
     <div class="skills-container">
         <div class="skill-category">
-            <h3 class="category-heading">Programming Tools <span class="emoji">🚀</span></h3>
+            <h3 class="category-heading">Programming Tools <span class="emoji"></span></h3>
             <ul class="skill-list">
                 <li><span class="skill-name">MATLAB:</span> Numerical computing, data analysis, and algorithm development.</li>
                 <li><span class="skill-name">Python</span></li>
@@ -116,7 +123,7 @@ size_<!DOCTYPE html>
         </div>
         
         <div class="skill-category">
-            <h3 class="category-heading">Circuit Design and Simulation <span class="emoji">⚙️</span></h3>
+            <h3 class="category-heading">Circuit Design and Simulation <span class="emoji"></span></h3>
             <ul class="skill-list">
                 <li><span class="skill-name">Cadence Virtuoso (90 nm Technology)</span></li>
                 <li><span class="skill-name">Proteus:</span> Electronic circuit simulation and testing.</li>
@@ -127,7 +134,7 @@ size_<!DOCTYPE html>
         </div>
 
         <div class="skill-category">
-            <h3 class="category-heading">Markup language and Text Editing <span class="emoji">📝</span></h3>
+            <h3 class="category-heading">Markup language and Text Editing <span class="emoji"></span></h3>
             <ul class="skill-list">
                 <li><span class="skill-name">LaTeX/ Overleaf :</span> Typesetting for academic and professional documents</li>
                 <li><span class="skill-name">HTML/CSS:</span> Creating visually apealing and responsive web pages.</li>
@@ -135,7 +142,7 @@ size_<!DOCTYPE html>
         </div>
 
         <div class="skill-category">
-            <h3 class="category-heading">Office productivity and Design Tools <span class="emoji">🎨</span></h3>
+            <h3 class="category-heading">Office productivity and Design Tools <span class="emoji"></span></h3>
             <ul class="skill-list">
                 <li><span class="skill-name">Microsoft Office:</span> Proficient in Word, Excel, and PowerPoint.</li>
             </ul>
@@ -149,14 +156,15 @@ size_<!DOCTYPE html>
         <!--Experience Section-->
 
 <section id="research">
-    <h2>Research Experience</h2>
+    <h2 class="research-exp">Research Experience</h2>
     <div class="subtitle">
-<!--        See <a href="#">Research Projects</a> and <a href="#">Publications</a> for more details. -->
+        <p>See my <a href="#publications">Publications</a> for more details.
+        </p>
     </div>
 
     <div class="timeline">
         <div class="timeline-item">
-            <div class="timeline-dot"></div>
+            <!--<div class="timeline-dot"></div>-->
             <div class="timeline-content">
                 <div class="logo-container">
                     <img src="images/cuetlogo1.jpeg" alt="CUET Logo" class="logo">
@@ -174,12 +182,12 @@ Amplifier for Advanced Medical Imaging Systems</li>
                         <li>The thesis presents a high-gain, wideband Low Noise Amplifier (LNA) designed for frequencies above 6 GHz using 90nm technology in Cadence Virtuoso. The LNA, which achieves a power gain of 29 dB across a 1.7 GHz bandwidth (6.6-8.3 GHz) with an average noise figure below 3 dB, is primarily intended for bio-medical applications where signal amplification is crucial. A key innovation of this work is the integration of a gain control mechanism using an input-side attenuator, which maintains the circuit's superior performance while allowing for adjustable gain. This research demonstrates a significant advancement in LNA design, offering a low-power solution with excellent impedance matching for use in both bio-medical and wideband communication systems..</li>
                     </ul>
                     <div class="download-link">
-                            <a href="document/thesis_presentation.pdf"download>
+                            <a href="document/thesis_presentation_slide.pdf"download>
                                 <i class="fas fa-download"></i>  Thesis Presentation Slide
                             </a>
                     </div>
                     <div class="download-link">
-                            <a href="document/thesis_report.pdf"download>
+                            <a href="document/Thesis_report1.pdf"download>
                                 <i class="fas fa-download"></i> Thesis Report
                             </a>
                     </div>
@@ -191,7 +199,7 @@ Amplifier for Advanced Medical Imaging Systems</li>
         <!-- Publications Section -->
 <section id="publications">
     <div class="publications-header">
-        <h2>Publications</h2>
+        <h2 class="my-publication">Publications</h2>
         <p>Click <a href="#">here</a> to search publications</p>
     </div>
 
@@ -229,7 +237,7 @@ Amplifier for Advanced Medical Imaging Systems</li>
                 <p class="title">High-Performance Low Noise Amplifier for Medical Applications: A Gain-Adjustable Solution (To be Submitted) </p>
                 <p class="authors">Nishat Anjumane Salsabila, Susmita Barua, Student, Mohammad Mahmudul Hasan Tareq,Assistant Professor, Dr.Quazi Delwar Hossain, Professor,</p>
                 <div class="publication-links">
-                    <a href="document/.pdf" class="pub-link"> Paper </a>
+                    <a href="document/" class="pub-link"> Paper </a>
                 </div>
             </div>
         </div>
@@ -238,100 +246,20 @@ Amplifier for Advanced Medical Imaging Systems</li>
 </section>
 
 
-
-        <!-- Experience Section -->
-        <section id="experience" class="fade-in">
-            <div class="container">
-                <h2>Experience and Certification</h2>
-                <div class="project-grid">
-                    <!-- Training 1 -->
-                    <div class="project-card">
-                        <img src="images/training/Coursera.png" alt="Training 1 Screenshot">
-                        <div class="project-info">
-                            <h3>Machine Learning with Python</h3>
-                            <p>This course provided practical experience in applying various machine learning algorithms using Python, with a focus on both supervised and unsupervised learning techniques. I gained hands-on expertise with key libraries like Scikit-learn to build and evaluate predictive models.</p>
-                            <div class="project-links">
-                                <a href="document/Certificate/Coursera_course1.pdf" class="btn-secondary" target="_blank"> Certificate </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Training 2 -->
-                    <div class="project-card">
-                        <img src="images/training/Coursera.png" alt="Training 2 Screenshot">
-                        <div class="project-info">
-                            <h3>Introduction to Deep Learning & Neural Networks</h3>
-                            <p>I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network's architecture; and apply deep learning to your own applications.
-                            </p>
-                            <div class="project-links">
-                                <a href="document/Certificate/Coursera course2.pdf" class="btn-secondary" target="_blank"> Certificate </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Training 3 -->
-                    <div class="project-card">
-                        <img src="images/training/edge.jfif" alt="Training 3 Screenshot">
-                        <div class="project-info">
-                            <h3>Engineering Design & Analysis with MATLAB</h3>
-                            <p>I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network's architecture; and apply deep learning to your own applications.
-                            </p>
-                            <div class="project-links">
-                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Training 4 -->
-                    <div class="project-card">
-                        <img src="images/training/ieee_cuet.jfif" alt="Training 4 Screenshot">
-                        <div class="project-info">
-                            <h3>Mastering VLSI and Semiconductor Techniques</h3>
-                            <p>I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network's architecture; and apply deep learning to your own applications.
-                            </p>
-                            <div class="project-links">
-                                <a href="document/Certificate/VLSI-Certificate.pdf" class="btn-secondary" target="_blank"> Certificate </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Training 5 -->
-                    <div class="project-card">
-                        <img src="images/training/cab.png" alt="Training 3 Screenshot">
-                        <div class="project-info">
-                            <h3>Solar System Planning, Design, Installation and operation</h3>
-                            <p>I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network's architecture; and apply deep learning to your own applications.
-                            </p>
-                            <div class="project-links">
-                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Training 6 -->
-                    <div class="project-card">
-                        <img src="images/training/desco.png" alt="Training 3 Screenshot">
-                        <div class="project-info">
-                            <h3>Industrial Training</h3>
-                            <p>I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network's architecture; and apply deep learning to your own applications.
-                            </p>
-                            <div class="project-links">
-                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> 
-        
-
         <!-- Projects Section -->
         <section id="projects" class="fade-in">
             <div class="container">
-                <h2>My Projects</h2>
+                <h2 class="tasks">Projects</h2>
+                <div class="subtitle">
+                    <p>A lists of my Undergrad Projects</p>
+                </div>
                 <div class="project-grid">
                     <!-- Project Card 1 -->
                     <div class="project-card">
                         <img src="images/Pulse-Sensor-Arduino.jpg" alt="Project 1 Screenshot">
                         <div class="project-info">
                             <h3>Heartbeat Monitoring System</h3>
-                            <p>This project is a cost-effective, real-time heartbeat monitoring system designed with a heart rate sensor and an LCD display. It was prototyped using Proteus simulation and a breadboard before final implementation on a PCB. The system offers a comfortable, low-cost solution for personal health monitoring</p>
+                            <p class="space1">This project is a cost-effective, real-time heartbeat monitoring system designed with a heart rate sensor and an LCD display. It was prototyped using Proteus simulation and a breadboard before final implementation on a PCB. The system offers a comfortable, low-cost solution for personal health monitoring</p>
                             <div class="project-links">
                                 <a href="document/Project/HEART_MONITORING_SYSTEM(1).pdf" class="btn-secondary" target="_blank"> Click Here </a>
                                 <a href="#" class="btn-secondary" target="_blank">Source Code</a>
@@ -357,7 +285,7 @@ The system was developed and validated through a multi-stage process, including 
                         <img src="images/transformer.PNG" alt="Project 3 Screenshot">
                         <div class="project-info">
                             <h3>565 KVA Distribution Transformer design</h3>
-                            <p>This project details the comprehensive design of a 516 kVA, 3-phase, 50 Hz, 6.6 KV/415 V, delta/star distribution transformer. The work includes all major design calculations and performance analysis, such as efficiency, voltage regulation, and no-load current. I used AutoCAD to design the core and winding layouts, providing a practical, visual representation of the final product.</p>
+                            <p class="space2">This project details the comprehensive design of a 516 kVA, 3-phase, 50 Hz, 6.6 KV/415 V, delta/star distribution transformer. The work includes all major design calculations and performance analysis, such as efficiency, voltage regulation, and no-load current. I used AutoCAD to design the core and winding layouts, providing a practical, visual representation of the final product.</p>
                             <div class="project-links">
                                 <a href="document/Project/Transformer(3).pdf" class="btn-secondary" target="_blank"> Click Here </a>
                                 <a href="#" class="btn-secondary" target="_blank">Source Code</a>
@@ -380,8 +308,8 @@ The system was developed and validated through a multi-stage process, including 
                     <div class="project-card">
                         <img src="images/Service_Design.PNG" alt="Project 5 Screenshot">
                         <div class="project-info">
-                            <h4>Electrical Service Design for a Residential Space </h4>
-                            <p>This project involved the complete design of an economical and safe electrical system for a residential home's ground floor. Using AutoCAD, I created a 2D floor plan and a single-line diagram, along with detailed calculations for load requirements, cable sizing, and protection devices.</p>
+                            <h3>Electrical Service Design for a Residential Space </h3>
+                            <p class="space5">This project involved the complete design of an economical and safe electrical system for a residential home's ground floor. Using AutoCAD, I created a 2D floor plan and a single-line diagram, along with detailed calculations for load requirements, cable sizing, and protection devices.</p>
                             <div class="project-links">
                                 <a href="document/Project/Residential_Building(5).pdf" class="btn-secondary" target="_blank">Click here</a>
                                 <a href="#" class="btn-secondary" target="_blank">Source Code</a>
@@ -391,6 +319,89 @@ The system was developed and validated through a multi-stage process, including 
                 </div>
             </div>
         </section> 
+
+
+                <!-- Experience Section -->
+        <section id="experience" class="fade-in">
+            <div class="container">
+                <h2 class="course">Certifications</h2>
+                <div class="project-grid">
+                    <!-- Training 1 -->
+                    <div class="project-card">
+                        <img src="images/training/Coursera.png" alt="Training 1 Screenshot">
+                        <div class="project-info">
+                            <h3>Machine Learning with Python</h3>
+                            <p>This course provided practical experience in applying various machine learning algorithms using Python, with a focus on both supervised and unsupervised learning techniques. I gained hands-on expertise with key libraries like Scikit-learn to build and evaluate predictive models.                                                                                             </p>
+                            <div class="project-links">
+                                <a href="document/Certificate/Coursera_course1.pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training 2 -->
+                    <div class="project-card">
+                        <img src="images/training/Coursera.png" alt="Training 2 Screenshot">
+                        <div class="project-info">
+                            <h3>Introduction to Deep Learning & Neural Networks</h3>
+                            <p>Through dedicated coursework, I have gained a solid foundation in neural networks and deep learning. My expertise includes implementing efficient, vectorized neural networks and identifying key architectural parameters to apply deep learning principles to real-world applications.
+                            </p>
+                            <div class="project-links">
+                                <a href="document/Certificate/Coursera course2.pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training 3 -->
+                    <div class="project-card">
+                        <img src="images/training/edge.jfif" alt="Training 3 Screenshot">
+                        <div class="project-info">
+                            <h3>Engineering Design & Analysis with MATLAB</h3>
+                            <p class="space3">This hands-on training provided me a comprehensive mastery of MATLAB for data analysis, design optimization, and algorithm development. I am proficient in applying this expertise to construct and analyze sophisticated models of complex engineering systems.
+                            </p>
+                            <div class="project-links">
+                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training 4 -->
+                    <div class="project-card">
+                        <img src="images/training/ieee_cuet.jfif" alt="Training 4 Screenshot">
+                        <div class="project-info">
+                            <h3>Mastering VLSI and Semiconductor Techniques</h3>
+                            <p class="space4">Through this comprehensive course, I gained a strong command of VLSI design and semiconductor techniques. This training equipped me with the practical knowledge to tackle advanced concepts in circuit and system-level design.</p>
+                            <br>
+                            <div class="project-links">
+                                <a href="document/Certificate/VLSI-Certificate.pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training 5 -->
+                    <div class="project-card">
+                        <img src="images/training/cab.png" alt="Training 3 Screenshot">
+                        <div class="project-info">
+                            <h3>Solar System Planning, Design, Installation and operation</h3>
+                            <p class="space4">This training has equipped me with the skills to manage the entire lifecycle of a solar project, from initial design to final operation. Now, I am proficient in solar system planning, design, and practical implementation.</p>
+                            <br>
+                            <div class="project-links">
+                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training 6 -->
+                    <div class="project-card">
+                        <img src="images/training/desco.png" alt="Training 3 Screenshot">
+                        <div class="project-info">
+                            <h3>Industrial Training</h3>
+                            <p>Through an industrial training program at DESCO, I developed a strong practical understanding of the electrical power sector. This training enhanced my expertize in the analysis of substation operations, fault detection, the maintenance of electrical distribution systems, applying engineering principles to real-world scenarios.</p>
+                            <div class="project-links">
+                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> 
+        
+
 
 
         <!--Achievement-->
@@ -425,13 +436,13 @@ The system was developed and validated through a multi-stage process, including 
         <!-- Contact Section -->
         <section id="contact" class="fade-in">
             <div class="container">
-                <h2>Get In Touch</h2>
+                <h2 class="con">Get In Touch</h2>
                 <p>I'm currently open to new opportunities. Feel free to reach out if you have a project in mind or just want to say hello!</p>
-                <a href="mailto:your.email@example.com" class="btn">Say Hello</a>
+                <a href="mailto:nishatanjumane@gmail.com" class="btn">Say Hello</a>
                 <div class="social-links">
-                    <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://nishat-salsabila.github.io/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nishat-anjumane-salsabila-095170348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/AnjumaneNi1659?t=yjk-cp23PEdnW-gBIoe5tQ&s=08" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </section>
@@ -443,7 +454,7 @@ The system was developed and validated through a multi-stage process, including 
             <span class="close-button">&times;</span>
             <!-- New Download Button -->
             <a href="document/cv.pdf" download="Nishat_Anjumane_Salsabila_CV.pdf" class="btn download-btn">Download</a>
-            <embed src="document/cv.pdf" type="application/pdf" width="100%" height="100%">
+            <embed src="document/CV (updated).pdf" type="application/pdf" width="100%" height="100%">
         </div>
     </div>
 

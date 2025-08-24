@@ -19,7 +19,13 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    /*font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Georgia', serif;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Inconsolata', monospace;*/
+    font-family: 'jura', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -42,7 +48,7 @@ h1, h2, h3 {
 
 h2 {
     font-size: 2.5rem;
-    text-align: center;
+    /*text-align: center;*/
     margin-bottom: 3rem;
 }
 
@@ -57,7 +63,9 @@ a {
 
 /* Header & Navigation */
 #header {
-    background-color: rgba(18, 18, 18, 0.8);
+    /*background-color: rgb(18, 18, 18, 0.8);*/
+    /*background-color: rgb(3, 0, 23);*/
+    background-color: #696969;
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -77,10 +85,24 @@ nav {
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
+/* ... other CSS rules ... */
+
+.home-link {
+    color: #FFC72C !important; /* The !important keyword can be used as a last resort */
+    font-weight: bold;
+}
+
+.nav-links a.home-link {
+    color: #FFC72C; /* This makes the rule more specific */
+}
+
+/* ... other CSS rules ... */
+
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -138,10 +160,20 @@ nav {
     padding-top: 120px; /* Add padding to push content down from fixed header */
 }
 
+
 .about-content {
     display: flex;
     align-items: flex-start;
     gap: 3rem;
+}
+
+.about-me {
+    display: inline;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
+    font-weight: 300;
+    /*color: #e8e68f;*/
+    color: #eaf38b
 }
 
 .about-text {
@@ -152,6 +184,15 @@ nav {
     flex: 1;
     max-width: 300px;
     border-radius: 10px;
+    margin-top: 30px;
+}
+
+.download-link1 {
+    margin-bottom: 3rem;
+}
+
+.interest-education {
+    margin-top: 2rem;
 }
 
 .skills span {
@@ -195,7 +236,9 @@ nav {
 .education-heading {
   font-size: 1.5em; /* You can adjust this value */
   font-weight: bold;
-  color: #c4f941; /* Or a similar light green/yellow color */
+  /*color: #c4f941;  Or a similar light green/yellow color */
+  /*color:rgb(210, 164, 131);*/
+  color: #d8b0b0;
   margin-bottom: 15px;
 }
 
@@ -208,7 +251,7 @@ nav {
 /* Styling for the Interests list items */
 .two-column-layout .column:first-child ul li {
   list-style-type: disc; /* Re-add disc for Interests */
-  color: #f0f0f0; /* Light text color for list items */
+  color: #f0f0f0;  /*Light text color for list items */
   margin-bottom: 10px;
 }
 
@@ -219,7 +262,8 @@ nav {
 }
 
 .fa-graduation-cap {
-  color: #c4f941; /* The same light green/yellow color for the icon */
+  /*color: #c4f941;  The same light green/yellow color for the icon */
+  color: floralwhite;
   font-size: 1.2em; /* Slightly larger icon */
   margin-right: 10px; /* Space between the icon and text */
 }
@@ -236,14 +280,23 @@ nav {
 }
 
 /* Skills Section */
-/* Skills Section */
+
+.my-skills {
+    /*font-family: 'Raleway', sans-serif;
+    font-weight: 300;*/
+    font-family: 'jura', sans-serif;
+    font-weight: 300;
+    color: #e8e68f;
+}
+
 #skills {
+    display: center;
     padding: 3rem 2rem;
     color: #f0f0f0;
 }
 
 #skills h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 2rem;
 }
 
@@ -260,7 +313,8 @@ nav {
 .category-heading {
     font-size: 1.5em;
     font-weight: bold;
-    color: #f0f0f0;
+    /*color: #f0f0f0;*/
+    color: #d8b0b0;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -289,7 +343,8 @@ nav {
     position: absolute;
     left: 0;
     top: 0;
-    color: #c4f941;
+    /*color: #c4f941;*/
+    color: #e7b0f7;
     font-size: 1em;
 }
 
@@ -299,18 +354,31 @@ nav {
 }
 
 /* Experience Section */
+
+/*.research-exp {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: #e8e68f;
+}*/
+
 /* Container for the entire experience section */
-#research-experience {
+#research {
     padding: 2rem;
     text-align: center;
     color: #f0f0f0;
 }
 
-#research-experience h2 {
-    color: #c4f941;
+#research h2 {
+    /*color: #c4f941;*/
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
+    font-weight: 300;
     font-size: 2.5em;
-    font-weight: bold;
+    /*font-weight: bold;*/
+    text-align: center;
 }
+
 
 .subtitle {
     margin-bottom: 3rem;
@@ -345,9 +413,9 @@ nav {
 
 /* The small dots on the timeline */
 .timeline-dot {
-    position: absolute;
-    top: 5px;
-    left: 20px; /* Position to align with the vertical line */
+    /*position: absolute;*/
+    top: 200px;
+    left: 20px;  /*Position to align with the vertical line */
     width: 14px;
     height: 14px;
     background-color: #56b09b;
@@ -382,7 +450,7 @@ nav {
 
 /* Text details styling */
 .details {
-    text-align: left;
+    text-align:left;
 }
 
 .title {
@@ -420,15 +488,20 @@ nav {
 }
 
 .publications-header h2 {
-    color: #c4f941;
+    /*color: #c4f941;*/
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
+    font-weight: 300;
     font-size: 2.5em;
-    font-weight: bold;
-    text-align: left;
+    /*font-weight: bold;*/
+    text-align: center;
 }
 
 .publications-header p {
     color: #a0a0a0;
     margin-top: 5px;
+    text-align: center;
 }
 
 .publications-header a {
@@ -505,6 +578,20 @@ nav {
     gap: 2rem;
 }
 
+.tasks {
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+}
+.subtitle p {
+    color: #a0a0a0;
+    margin-top: 5px;
+    text-align: center;
+}
+
 .project-card {
     background: var(--primary-color);
     border-radius: 10px;
@@ -532,9 +619,25 @@ nav {
     display: flex;
     gap: 1rem;
 }
+.space1 {
+    margin-bottom: 200px;
+}
+.space2 {
+    margin-bottom: 150px;
+}
+.space5 {
+    margin-bottom: 70px;
+}
+
 
 /* Achievements Section */
 
+.space3 {
+    margin-bottom: 50px;
+}
+.space4 {
+    margin-bottom: 25px;
+}
 
 /* Achievements Section */
 /* Overall Section Layout */
@@ -552,12 +655,18 @@ nav {
 .section-heading {
     flex: 1;
     text-align: left;
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+     font-family: 'jura', sans-serif;
 }
 
 .section-heading h2 {
-    color: #c4f941;
+    /*color: #c4f941;*/
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
     font-size: 2.5em;
-    font-weight: bold;
+    font-weight: 300/*bold*/;
     margin-top: 0;
 }
 
@@ -582,6 +691,15 @@ nav {
     position: relative;
 }
 
+.course {
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+}
+
 /* Platform logo */
 .platform-logo {
     width: 60px; /* Adjust size as needed */
@@ -593,7 +711,8 @@ nav {
 }
 
 .card-content h3 {
-    color: #c4f941;
+    /*color: #c4f941;*/
+    color: #75b3f2;
     font-size: 1.2em;
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -659,6 +778,12 @@ nav {
 
 .social-links a:hover {
     color: var(--accent-color);
+}
+
+.con {
+    color: #e8e68f;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'jura', sans-serif;
 }
 
 /* Footer */
