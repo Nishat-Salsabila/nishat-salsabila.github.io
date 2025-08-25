@@ -605,13 +605,19 @@ nav {
 }
 
 .pub-link {
-    color: #f0f0f0;
+    display: inline-block;
+
+
+    color: /*#f0f0f0;*/var(--accent-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border: 1px solid #555;
-    border-radius: 5px;
+    /*border: 1px solid #555;*/
+    border: 1px solid var(--accent-color);
+    border-radius: /*5*/ 8px;
     font-size: 0.8em;
-    transition: all 0.3s ease;
+    /*transition: all 0.3s ease;*/
+
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .pub-link:hover {
@@ -708,10 +714,10 @@ nav {
     color: #f0f0f0;
 }
 
-.achievement-layout {
+/*.achievement-layout {
     display: flex;
-    gap: 4rem; /* Adjust space between heading and cards */
-}
+    gap: 4rem;  Adjust space between heading and cards 
+}*/
 
 /* Left-side heading and description */
 .section-heading {
@@ -774,8 +780,9 @@ nav {
 
 .card-content h3 {
     /*color: #c4f941;*/
-    color: #75b3f2;
+    color: /*#75b3f2*/#d8b0b0;
     font-size: 1.2em;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
