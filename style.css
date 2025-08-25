@@ -163,7 +163,7 @@ nav {
 
 .about-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 3rem;
 }
 
