@@ -442,10 +442,14 @@ nav {
     margin: 0;
 }
 
-#publications .project-info .authors {
+#publications .project-info .authors, .conference_name {
     color: #a0a0a0;
     font-size: 0.9em;
     margin-top: 5px;
+}
+.conference_name {
+    font-weight: bold;
+    margin-top: 1em;
 }
 
 #publications .project-links {
