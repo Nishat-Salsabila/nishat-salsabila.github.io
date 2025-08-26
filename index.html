@@ -4,21 +4,17 @@ size_<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nishat Anjumane Salsabila - Portfolio</title>
-    <!-- Link to CSS file -->
     <link rel="stylesheet" href="style.css">
-    <!-- Link to Google Fonts (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Jura Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-    <script src="script.js"></script>
 
     <!-- Header Section -->
     <header id="header">
@@ -30,13 +26,15 @@ size_<!DOCTYPE html>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Certifications</a></li>
-                <li><a href="#achievement">Achievement</a></li>
-
-                <!--<li><a href="#contact">Contact</a></li>-->
-                <!-- Updated CV Link to trigger modal -->
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#scholarships">Scholarships</a></li>
                 <li><a href="document/cv.pdf" id="cv-link">CV</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -52,7 +50,7 @@ size_<!DOCTYPE html>
                             <p>B.Sc in EEE, CUET</p>
                         </div>
                         <div class="social-links">
-                            <a href="mailto:nishatanjumane@gmail.com" target="_blank" aria-label="Gmail">
+                            <a href="mailto:nishatanjumane@gmail.com" target="_blank" aria-label="Gmail" class="tooltip-host" data-tooltip="nishatanjumane@gmail.com">
                                 <i class="fas fa-envelope"></i>
                             </a>    
                             <a href="https://nishat-salsabila.github.io/" target="_blank" aria-label="GitHub">
@@ -69,7 +67,7 @@ size_<!DOCTYPE html>
                     <div class="about-text">
                         <h2 class="about-me">About Me</h2>
                         <p>Hello! I'm Nishat Anjumane Salsabila, a recent Electrical and Electronic Engineering (EEE) graduate with a strong enthusiasm for research and learning new things. My academic background has provided me with a solid foundation in VLSI circuit design, RF/microwave systems, and analog integrated circuits. I have particularly enjoyed exploring low-noise amplifiers (LNAs), LNA design with attenuator, Power Amplifier(PA), and multi-stage amplifier designs using simulation tools such as Cadence Virtuoso.</p>
-                        <p>With an eye toward advanced studies, I am eager to pursue a Master’s and Ph.D., where I can dive deeper into analog/RF IC design, low-power architectures, and emerging semiconductor technologies. While my primary interests lie in these areas, I am also open to conducting research in other relevant sectors. My long-term goal is to grow as a researcher and educator, contributing to innovative circuit design while also inspiring the next generation of engineers. I am now seeking opportunities where I can apply my engineering mindset.I also love sharing my insights on this website. [Check my recent posts for more!]. Feel free to reach out to me at nishatanjumane@gmail.com – I’d love to connect!</p>
+                        <p>With an eye toward advanced studies, I am eager to pursue a Master’s and Ph.D., where I can dive deeper into analog/RF IC design, low-power architectures, and emerging semiconductor technologies. While my primary interests lie in these areas, I am also open to conducting research in other relevant sectors. My long-term goal is to grow as a researcher and educator, contributing to innovative circuit design while also inspiring the next generation of engineers. I am now seeking opportunities where I can apply my engineering mindset.I also love sharing my insights on this website. Feel free to reach out to me at nishatanjumane@gmail.com – I’d love to connect!</p>
                         <div class="download-link1">
                             <a href="document/CV (updated).pdf" download="" class="btn-outline">
                                 <i class="fas fa-download"></i>  Curriculum Vitae
@@ -80,78 +78,62 @@ size_<!DOCTYPE html>
         
                 <!-- New Flashcard Grid for Interests & Education -->
                 <h2 class="about-me" style="display: block; text-align: center; margin-top: 4rem;">Interests & Education</h2>
-                <div class="project-grid">
-  
-                    <!-- Education Card -->
-                    <div class="project-card">
-                        <div class="project-info">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-card-content">
                             <h3 class="category-heading">Education</h3>
                             <ul class="education-list">
                                 <li>
                                    <i class="fas fa-graduation-cap"></i>
                                    <div>
                                        <span class="degree">B.Sc in Electrical and Electronic Engineering,</span>
-                                       <span class="dates">2019-2025</span>
-                                       <br>
-                                       <span class="university">Chittagong University of Engineering and Technology, Bangladesh.</span>
-                                       <br>
+                                       <span class="dates">2019-2025</span><br>
+                                       <span class="university">Chittagong University of Engineering and Technology, Bangladesh.</span><br>
                                        <span class="grade">Grade: 3.72/4.00</span><br>
                                        <span class="Position">Position: 15/180 </span>
                                    </div>
                                </li>
-                               <br>
                                <li>
                                    <i class="fas fa-graduation-cap"></i>
                                    <div>
                                        <span class="degree">Higher Secondary Certificate (Science),</span>
-                                       <span class="dates">2017-2019</span>
-                                       <br>
-                                       <span class="university">Noakhali Govt. Collage</span>
-                                       <br>
+                                       <span class="dates">2017-2019</span><br>
+                                       <span class="university">Noakhali Govt. Collage</span><br>
                                        <span class="grade">Grade: 5.00/5.00</span>
                                    </div>
                                </li>
-                               <br>
                                <li>
                                    <i class="fas fa-graduation-cap"></i>
                                    <div>
                                        <span class="degree">Secondary School Certificate (Science),</span>
-                                       <span class="dates">2017</span>
-                                       <br>
-                                       <span class="university">Noakhali Govt. Girls High School</span>
-                                       <br>
+                                       <span class="dates">2017</span><br>
+                                       <span class="university">Noakhali Govt. Girls High School</span><br>
                                        <span class="grade">Grade: 5.00/5.00</span>
                                    </div>
                                </li>
-                               <br>
                                <li>
                                 <i class="fas fa-graduation-cap"></i>
                                 <div>
                                     <span class="degree">Junior School Certificate,</span>
-                                    <span class="dates">2014</span>
-                                    <br>
-                                    <span class="university">Noakhali Govt. Girls High School</span>
-                                    <br>
+                                    <span class="dates">2014</span><br>
+                                    <span class="university">Noakhali Govt. Girls High School</span><br>
                                     <span class="grade">Grade: 5.00/5.00</span>
                                 </div>
                             </li>
-                            <br>
                             <li>
                                 <i class="fas fa-graduation-cap"></i>
                                 <div>
                                     <span class="degree">Primary School Certificate,</span>
-                                    <span class="dates">2010</span>
-                                    <br>
-                                    <span class="university">Noakhali Govt. Girls High School</span>
-                                    <br>
+                                    <span class="dates">2010</span><br>
+                                    <span class="university">Noakhali Govt. Girls High School</span><br>
                                     <span class="grade">Grade: 5.00/5.00</span>
                                 </div>
                             </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-info">
+                    <div class="info-card">
+                        <div class="info-card-content">
                             <h3 class="category-heading">Interests</h3>
                             <ul class="skill-list">
                                 <li>VLSI</li>
@@ -161,10 +143,9 @@ size_<!DOCTYPE html>
                                 <li>Machine Learning</li>
                             </ul>
                         </div>
-                        <img src="images/research.jpg" alt="Artistic representation of research interests" class="card-footer-image">
+                        <img src="images/research.jpg" alt="Artistic representation of research interests">
                     </div>
                 </div>
-            </div>
         </section>
 
 <!-- index.html -->
@@ -230,93 +211,97 @@ size_<!DOCTYPE html>
         <!--Experience Section-->
 
 <section id="research">
-    <h2 class="research-exp">Research Experience</h2>
-    <div class="subtitle">
-        <p>See my <a href="#publications">Publications</a> for more details.
-        </p>
-    </div>
+    <div class="container">
+        <h2 class="research-exp">Research Experience</h2>
+        <div class="subtitle">
+            <p>See my <a href="#publications">Publications</a> for more details.</p>
+        </div>
 
-    <div class="timeline">
-        <div class="timeline-item">
-            <!--<div class="timeline-dot"></div>-->
-            <div class="timeline-content">
-                <div class="logo-container">
-                    <img src="images/cuetlogo1.jpeg" alt="CUET Logo" class="logo">
-                </div>
-                <div class="details">
-                    <div class="title">Undergraduate Thesis </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="title">Undergraduate Thesis</div>
                     <div class="institution">Department of Electrical and Electroic Engineering, Chittagong University of Engineering and Technology</div>
                     <div class="duration">2024 – June, 2025</div>
                     <div class="location">Chittagong, Bangladesh</div>
                     <ul>
-                        <li><span class="bold">Title:</span> Design and Analysis of a Gain - Tunable Low Noise 
-Amplifier for Advanced Medical Imaging Systems</li>
+                        <li><span class="bold">Title:</span> Design and Analysis of a Gain - Tunable Low Noise Amplifier for Advanced Medical Imaging Systems</li>
                         <li><span class="bold">Supervisor:</span> Dr. Prof Quazi Delwar Hossain</li>
                         <li><span class="bold">Advisor:</span> Assistant Prof Mohammad Mahmudul Hasan Tareq</li>
                         <li>The thesis presents a high-gain, wideband Low Noise Amplifier (LNA) designed for frequencies above 6 GHz using 90nm technology in Cadence Virtuoso. The LNA, which achieves a power gain of 29 dB across a 1.7 GHz bandwidth (6.6-8.3 GHz) with an average noise figure below 3 dB, is primarily intended for bio-medical applications where signal amplification is crucial. A key innovation of this work is the integration of a gain control mechanism using an input-side attenuator, which maintains the circuit's superior performance while allowing for adjustable gain. This research demonstrates a significant advancement in LNA design, offering a low-power solution with excellent impedance matching for use in both bio-medical and wideband communication systems..</li>
                     </ul>
                     <div class="thesis-links">
-                        <a href="document/thesis_presentation_slide.pdf" download class="btn-outline">
+                        <a href="document/thesis_presentation_slide.pdf" download="" class="btn-outline">
                             <i class="fas fa-download"></i> Thesis Slides
                         </a>
-                        <a href="document/Thesis_report1.pdf" download class="btn-outline">
+                        <a href="document/Thesis_report1.pdf" download="" class="btn-outline">
                             <i class="fas fa-download"></i> Thesis Report
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-</section>
-
-        <!-- Publications Section -->
-<section id="publications">
-    <div class="publications-header">
-        <h2 class="my-publication">Publications</h2>
-        <p>Click <a href="#">here</a> to search publications</p>
     </div>
-
-    <div class="publication-list">
-        <div class="publication-item">
-            <i class="fas fa-file-alt"></i>
-            <div class="publication-details">
-                <p class="title"> Design of a Multi-Stage Common Source LNA with Enhanced Gain and Noise Performance for SIGINT Applications (Accepted) </p>
-                <p class="authors">Nishat Anjumane Salsabila, Susmita Barua, Mohammad M. H. Tareq, and Quazi Delwar Hossain</p>
-                <div class="publication-links">
-                    <a href="document/Paper_1.pdf" class="pub-link"> Paper </a>
-                    <a href="document/Paper_1_Poster.pdf" class="pub-link"> Poster </a>
-                    <a href="document/Paper_1_Certificate.pdf" class="pub-link"> Certificate </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="publication-item">
-            <i class="fas fa-file-alt"></i>
-            <div class="publication-details">
-                <p class="title">Design of a two-stage Broadband Stable Power Amplifier for Low Power Wireless Telemetry Systems using 90 nm CMOS Technology (Accepted) </p>
-                <p class="authors">Nishat Anjumane Salsabila</p>
-                <div class="publication-links">
-                    <a href="document/Paper_2.pdf" class="pub-link"> Paper </a>
-                    <a href="document/Paper_2_Poster.pdf" class="pub-link">Poster</a>
-                    <a href="document/Paper_2_Certificate.pdf" class="pub-link">Certificate</a>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="publication-item">
-            <i class="fas fa-file-alt"></i>
-            <div class="publication-details">
-                <p class="title">High-Performance Low Noise Amplifier for Medical Applications: A Gain-Adjustable Solution (To be Submitted) </p>
-                <p class="authors">Nishat Anjumane Salsabila, Susmita Barua, Student, Mohammad Mahmudul Hasan Tareq,Assistant Professor, Dr.Quazi Delwar Hossain, Professor,</p>
-                <div class="publication-links">
-                    <a href="document/" class="pub-link"> Paper </a>
-                </div>
-            </div>
-        </div>
-
-        </div>
 </section>
 
+<!-- Publications Section -->
+<section id="publications">
+    <div class="container">
+        <h2 class="my-publication" style="text-align: center;">Publications</h2>
+        <p style="text-align: center; color: #a0a0a0; margin-top: -2rem; margin-bottom: 3rem;">Click <a href="#">here</a> to search publications</p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="publication-content">
+                        <i class="fas fa-file-alt card-icon"></i>
+                        <div class="publication-text">
+                            <p class="title">Design of a Multi-Stage Common Source LNA with Enhanced Gain and Noise Performance for SIGINT Applications (Accepted)</p>
+                            <p class="authors">Nishat Anjumane Salsabila, Susmita Barua, Mohammad M. H. Tareq, and Quazi Delwar Hossain</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="document/Paper_1.pdf" class="pub-link">Paper</a>
+                        <a href="document/Paper_1_Poster.pdf" class="pub-link">Poster</a>
+                        <a href="document/Paper_1_Certificate.pdf" class="pub-link">Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="publication-content">
+                        <i class="fas fa-file-alt card-icon"></i>
+                        <div class="publication-text">
+                            <p class="title">Design of a two-stage Broadband Stable Power Amplifier for Low Power Wireless Telemetry Systems using 90 nm CMOS Technology (Accepted)</p>
+                            <p class="authors">Nishat Anjumane Salsabila</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="document/Paper_2.pdf" class="pub-link">Paper</a>
+                        <a href="document/Paper_2_Poster.pdf" class="pub-link">Poster</a>
+                        <a href="document/Paper_2_Certificate.pdf" class="pub-link">Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="publication-content">
+                        <i class="fas fa-file-alt card-icon"></i>
+                        <div class="publication-text">
+                            <p class="title">High-Performance Low Noise Amplifier for Medical Applications: A Gain-Adjustable Solution (To be Submitted)</p>
+                            <p class="authors">Nishat Anjumane Salsabila, Susmita Barua, Student, Mohammad Mahmudul Hasan Tareq,Assistant Professor, Dr.Quazi Delwar Hossain, Professor,</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="document/" class="pub-link">Paper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Projects Section -->
         <section id="projects" class="fade-in">
@@ -333,7 +318,7 @@ Amplifier for Advanced Medical Imaging Systems</li>
                             <h3>Heartbeat Monitoring System</h3>
                             <p class="space1">This project is a cost-effective, real-time heartbeat monitoring system designed with a heart rate sensor and an LCD display. It was prototyped using Proteus simulation and a breadboard before final implementation on a PCB. The system offers a comfortable, low-cost solution for personal health monitoring</p>
                             <div class="project-links">
-                                <a href="document/Project/HEART_MONITORING_SYSTEM(1).pdf" class="btn-secondary" target="_blank"> Click Here </a>
+                                <a href="document/Project/HEART_MONITORING_SYSTEM(1).pdf" class="btn-outline" target="_blank"> Click Here </a>
                             </div>
                         </div>
                     </div>
@@ -347,7 +332,7 @@ Amplifier for Advanced Medical Imaging Systems</li>
 The system was developed and validated through a multi-stage process, including simulation in Proteus, data-driven calibration, and final implementation on a custom PCB.</p>
                             <br>
                             <div class="project-links">
-                                <a href="document/Project/Phototransistor(2).pdf" class="btn-secondary" target="_blank"> Click here </a>
+                                <a href="document/Project/Phototransistor(2).pdf" class="btn-outline" target="_blank"> Click here </a>
                             </div>
                         </div>
                     </div>
@@ -358,7 +343,7 @@ The system was developed and validated through a multi-stage process, including 
                             <h3>565 KVA Distribution Transformer design</h3>
                             <p class="space2">This project details the comprehensive design of a 516 kVA, 3-phase, 50 Hz, 6.6 KV/415 V, delta/star distribution transformer. The work includes all major design calculations and performance analysis, such as efficiency, voltage regulation, and no-load current. I used AutoCAD to design the core and winding layouts, providing a practical, visual representation of the final product.</p>
                             <div class="project-links">
-                                <a href="document/Project/Transformer(3).pdf" class="btn-secondary" target="_blank"> Click Here </a>
+                                <a href="document/Project/Transformer(3).pdf" class="btn-outline" target="_blank"> Click Here </a>
                             </div>
                         </div>
                     </div>
@@ -370,7 +355,7 @@ The system was developed and validated through a multi-stage process, including 
                             <p>This project is an automated system for generating personalized certificates by leveraging MATLAB to streamline the process. It is designed to import data directly from Excel to efficiently create a large number of certificates. The project's core functionality can be easily adapted for other image processing tasks and for automated data analysis in applications like Big Data and IoT.</p>
                             <br>
                             <div class="project-links">
-                                <a href="document/Project/Generating_Certificate_Automatically(4).pdf" class="btn-secondary" target="_blank"> Click here </a>
+                                <a href="document/Project/Generating_Certificate_Automatically(4).pdf" class="btn-outline" target="_blank"> Click here </a>
                             </div>
                         </div>
                     </div>
@@ -381,7 +366,7 @@ The system was developed and validated through a multi-stage process, including 
                             <h3>Electrical Service Design for a Residential Space </h3>
                             <p class="space5">This project involved the complete design of an economical and safe electrical system for a residential home's ground floor. Using AutoCAD, I created a 2D floor plan and a single-line diagram, along with detailed calculations for load requirements, cable sizing, and protection devices.</p>
                             <div class="project-links">
-                                <a href="document/Project/Residential_Building(5).pdf" class="btn-secondary" target="_blank">Click here</a>
+                                <a href="document/Project/Residential_Building(5).pdf" class="btn-outline" target="_blank">Click here</a>
                             </div>
                         </div>
                     </div>
@@ -390,8 +375,8 @@ The system was developed and validated through a multi-stage process, including 
         </section> 
 
 
-                <!-- Experience Section -->
-        <section id="experience" class="fade-in">
+        <!-- Experience Section -->
+        <section id="certifications" class="fade-in">
             <div class="container">
                 <h2 class="course">Certifications</h2>
                 <div class="project-grid">
@@ -402,7 +387,7 @@ The system was developed and validated through a multi-stage process, including 
                             <h3>Machine Learning with Python</h3>
                             <p>This course provided practical experience in applying various machine learning algorithms using Python, with a focus on both supervised and unsupervised learning techniques. I gained hands-on expertise with key libraries like Scikit-learn to build and evaluate predictive models.                                                                                             </p>
                             <div class="project-links">
-                                <a href="document/Certificate/Coursera_course1.pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                                <a href="document/Certificate/Coursera_course1.pdf" class="btn-outline" target="_blank"> Certificate </a>
                             </div>
                         </div>
                     </div>
@@ -414,7 +399,7 @@ The system was developed and validated through a multi-stage process, including 
                             <p>Through dedicated coursework, I have gained a solid foundation in neural networks and deep learning. My expertise includes implementing efficient, vectorized neural networks and identifying key architectural parameters to apply deep learning principles to real-world applications.
                             </p>
                             <div class="project-links">
-                                <a href="document/Certificate/Coursera course2.pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                                <a href="document/Certificate/Coursera course2.pdf" class="btn-outline" target="_blank"> Certificate </a>
                             </div>
                         </div>
                     </div>
@@ -426,7 +411,7 @@ The system was developed and validated through a multi-stage process, including 
                             <p class="space3">This hands-on training provided me a comprehensive mastery of MATLAB for data analysis, design optimization, and algorithm development. I am proficient in applying this expertise to construct and analyze sophisticated models of complex engineering systems.
                             </p>
                             <div class="project-links">
-                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-outline" target="_blank"> Certificate </a>
                             </div>
                         </div>
                     </div>
@@ -438,7 +423,7 @@ The system was developed and validated through a multi-stage process, including 
                             <p class="space4">Through this comprehensive course, I gained a strong command of VLSI design and semiconductor techniques. This training equipped me with the practical knowledge to tackle advanced concepts in circuit and system-level design.</p>
                             <br>
                             <div class="project-links">
-                                <a href="document/Certificate/VLSI-Certificate.pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                                <a href="document/Certificate/VLSI-Certificate.pdf" class="btn-outline" target="_blank"> Certificate </a>
                             </div>
                         </div>
                     </div>
@@ -450,7 +435,7 @@ The system was developed and validated through a multi-stage process, including 
                             <p class="space4">This training has equipped me with the skills to manage the entire lifecycle of a solar project, from initial design to final operation. Now, I am proficient in solar system planning, design, and practical implementation.</p>
                             <br>
                             <div class="project-links">
-                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-outline" target="_blank"> Certificate </a>
                             </div>
                         </div>
                     </div>
@@ -461,7 +446,7 @@ The system was developed and validated through a multi-stage process, including 
                             <h3>Industrial Training</h3>
                             <p>Through an industrial training program at DESCO, I developed a strong practical understanding of the electrical power sector. This training enhanced my expertize in the analysis of substation operations, fault detection, the maintenance of electrical distribution systems, applying engineering principles to real-world scenarios.</p>
                             <div class="project-links">
-                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-secondary" target="_blank"> Certificate </a>
+                                <a href="document/Certificate/Edge-Certificate (1).pdf" class="btn-outline" target="_blank"> Certificate </a>
                             </div>
                         </div>
                     </div>
@@ -473,52 +458,37 @@ The system was developed and validated through a multi-stage process, including 
 
 
 
-        <!--Achievement-->
-        <section id="achievement">
-            <div class="achievement-layout">
-                <div class="section-heading">
-                    <h2 class="tasks">Achievement</h2>
-                    <div class="subtitle">
-                        <p>A list of Scholarship I've achieved.</p>
-                    </div>
+        <!--Scholarships-->
+        <section id="scholarships">
+            <div class="container">
+                <h2 class="tasks">Scholarships</h2>
+                <div class="subtitle">
+                    <p>A list of scholarships I've achieved.</p>
                 </div>
-                <div class="card-container">
-                    <div class="achievement-card">
-                        <div class="card-content">
-                            <h3> General Grade Scholarship in HSC</h3>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>General Grade Scholarship in HSC</h3>
                             <p class="course-info">2019</p>
                             <p class="course-description">
-                                I was awarded the <bold>General Grade Scholarship</bold> in Higher Secondary level by the Board of Secondary and Higher Secondary Education, Chittagong.My tuition fees were fully waived, and I received monthly stipends for four consecutive years.</p>
+                                I was awarded the <span class="bold">General Grade Scholarship</span> in Higher Secondary level by the Board of Secondary and Higher Secondary Education, Chittagong.My tuition fees were fully waived, and I received monthly stipends for four consecutive years.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="achievement-card">
-                        <div class="card-content">
-                            <h3> General Grade Scholarship in JSC</h3>
+        
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>General Grade Scholarship in JSC</h3>
                             <p class="course-info">2014</p>
                             <p class="course-description">
-                                I was awarded the <bold>General Grade Scholarship</bold> in Junior Secondary level by the Board of Secondary and Higher Secondary Education, Chittagong.My tuition fees were fully waived, and I received monthly stipends for two consecutive years.</p>
+                                I was awarded the <span class="bold">General Grade Scholarship</span> in Junior Secondary level by the Board of Secondary and Higher Secondary Education, Chittagong.My tuition fees were fully waived, and I received monthly stipends for two consecutive years.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section
-        <section id="contact" class="fade-in">
-            <div class="container">
-                <h2 class="con">Get In Touch</h2>
-                <p>I'm currently open to new opportunities. Feel free to reach out if you have a project in mind or just want to say hello!</p>
-                <a href="mailto:nishatanjumane@gmail.com" class="btn">Say Hello</a>
-                <div class="social-links">
-                    <a href="https://nishat-salsabila.github.io/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/nishat-anjumane-salsabila-095170348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://x.com/AnjumaneNi1659?t=yjk-cp23PEdnW-gBIoe5tQ&s=08" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </section>
-    </main> -->
-
+ 
     <!-- CV Modal -->
     <div id="cv-modal" class="modal">
         <div class="modal-content">
