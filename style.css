@@ -431,8 +431,8 @@ nav {
 }
 
 .card-icon {
-    font-size: 2rem;
-    margin-top: 5px;
+    font-size: 1.5rem;
+    margin-top: 2px;
     color: var(--accent-color);
 }
 
@@ -690,6 +690,10 @@ footer {
     h2 {
         font-size: 2rem;
     }
+
+    .container {
+        padding: 0 1rem; /* Reduces side padding on mobile */
+    }
     
     .about-content {
         flex-direction: column;
@@ -742,5 +746,16 @@ footer {
     /* Class toggled by JavaScript to show the mobile menu */
     .nav-links.active {
         left: 0;
+    } 
+
+    #research,
+    #scholarships,
+    #publications {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    #research .project-grid {
+        justify-content: center;
     }
 }
