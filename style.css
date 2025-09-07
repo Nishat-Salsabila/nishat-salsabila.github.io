@@ -132,12 +132,9 @@ nav {
     margin: 0 auto;
 }
 
-/* Styling for the Logo Font */
 .logo {
-  font-family: 'Sacramento', cursive;
-  font-size: 2.0rem;
-  font-weight: 400;  
-  color: #FFC72C;   
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -704,20 +701,27 @@ footer {
         align-items: center; /* Centers items in column view */
     }
 
+    /* --- MODIFIED FOR BETTER LOGO ALIGNMENT --- */
     nav {
-        justify-content: center; /* Center the logo */
-        position: relative; /* Create a positioning context for hamburger */
+        /* 1. Remove justify-content: center to align the logo left */
+        /* justify-content: center; */ 
+        position: relative; /* Keep this for hamburger positioning */
+        
+        /* 2. Reduce padding to move logo further left */
+        padding-left: 15px;
+        padding-right: 15px;
     }
-
+    
+    /* ADDED: Reduce logo font size on mobile */
     .logo {
-        text-align: center;
-        font-size: 1.8rem;
+        font-size: 2rem; 
     }
+    /* --- END OF MODIFICATIONS --- */
 
     .hamburger {
         display: block; /* Show the hamburger icon */
         position: absolute;
-        right: 10px; /* Align with nav padding */
+        right: 15px; /* Match the nav's new padding */
         top: 50%;
         transform: translateY(-50%);
     }
@@ -766,31 +770,4 @@ footer {
     #research .project-grid {
         justify-content: center;
     }
-}
-
-/* --- Header Layout Fix for Mobile --- */
-
-/* 1. Make the navigation bar a flex container */
-nav {
-    display: flex;
-    justify-content: space-between; /* This is the key: it pushes the logo and hamburger to opposite ends */
-    align-items: center;            /* This keeps them vertically centered */
-    width: 100%;                    /* Ensures the nav takes the full width */
-}
-
-/* 2. Ensure the logo's text is aligned to the left within its own container */
-.logo {
-    text-align: left;
-    /* Prevents the logo from taking up all the space and pushing other items away */
-    flex-grow: 1; 
-}
-
-/* 3. Prevent the hamburger from being squished */
-.hamburger {
-    flex-shrink: 0;
-}
-
-/* 4. (Optional but recommended) Adjust logo font size on mobile */
-@media (max-width: 768px) {
-
 }
