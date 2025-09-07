@@ -709,10 +709,14 @@ footer {
         position: relative; /* Create a positioning context for hamburger */
     }
 
+    .logo {
+        font-size: 1.8rem;
+    }
+
     .hamburger {
         display: block; /* Show the hamburger icon */
         position: absolute;
-        right: 2rem; /* Align with nav padding */
+        right: 10px; /* Align with nav padding */
         top: 50%;
         transform: translateY(-50%);
     }
@@ -787,8 +791,5 @@ nav {
 
 /* 4. (Optional but recommended) Adjust logo font size on mobile */
 @media (max-width: 768px) {
-    .logo {
-        /* You may need to decrease the font size on smaller screens */
-        font-size: 2rem; /* Adjust this value as needed */
-    }
+
 }
