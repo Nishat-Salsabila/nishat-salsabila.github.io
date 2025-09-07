@@ -132,9 +132,12 @@ nav {
     margin: 0 auto;
 }
 
+/* Styling for the Logo Font */
 .logo {
-    font-size: 1.2rem;
-    font-weight: 700;
+  font-family: 'Sacramento', cursive;
+  font-size: 2.0rem;
+  font-weight: 400;  
+  color: #FFC72C;   
 }
 
 .nav-links {
