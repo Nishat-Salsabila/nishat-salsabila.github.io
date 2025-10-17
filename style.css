@@ -239,7 +239,7 @@ nav {
 .about-me {
     display: inline;
     font-family: 'jura', sans-serif;
-    font-weight: 300;
+    font-weight: 450;
     color: #eaf38b;
 }
 
@@ -321,7 +321,7 @@ nav {
 /* --- Skills Section --- */
 .my-skills {
     font-family: 'jura', sans-serif;
-    font-weight: 300;
+    font-weight: 450;
     color: #e8e68f;
     text-align: center;
 }
@@ -360,7 +360,7 @@ nav {
 .research-exp {
     color: #e8e68f;
     font-family: 'jura', sans-serif;
-    font-weight: 300;
+    font-weight: 450;
     font-size: 2.5em;
     text-align: center;
 }
@@ -415,7 +415,7 @@ nav {
 .my-publication {
     color: #e8e68f;
     font-family: 'jura', sans-serif;
-    font-weight: 300;
+    font-weight: 450;
     font-size: 2.5em;
     text-align: center;
 }
@@ -499,7 +499,7 @@ nav {
 .tasks, .course {
     color: #e8e68f;
     font-family: 'jura', sans-serif;
-    font-weight: 300;
+    font-weight: 450;
     font-size: 2.5em;
     text-align: center;
 }
