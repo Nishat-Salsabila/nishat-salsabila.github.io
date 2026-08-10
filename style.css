@@ -375,6 +375,10 @@ nav {
     margin-bottom: 0.25rem;
 }
 
+.sub-skill-set {
+    padding-left: 30px;
+}
+
 /* --- Research Experience Section --- */
 #research {
     padding: 2rem;
