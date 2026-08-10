@@ -376,9 +376,14 @@ nav {
 }
 
 .sub-skill-set {
+    list-style: none;
     padding-left: 30px;
 }
 
+.sub-skill-set li::before {
+    content: "→";
+    margin-right: 8px;
+}
 /* --- Research Experience Section --- */
 #research {
     padding: 2rem;
