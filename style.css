@@ -365,10 +365,14 @@ nav {
     color: #f0f0f0;
 }
 
-.skill-list ul.sub-skill-list {
-    padding-left: 1.5rem; /* Adjust padding to control the indentation amount */
-    list-style-type: disc; /* Or 'none' if you prefer no bullet points */
+.skill-list .sub-skill-list {
+    padding-left: 1.5rem;
+    list-style-type: disc;
     margin-top: 0.25rem;
+}
+
+.skill-list .sub-skill-set li {
+    margin-bottom: 0.25rem;
 }
 
 /* --- Research Experience Section --- */
